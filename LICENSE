@@ -1,36 +1,31 @@
-# ASHI-CORE UNIVERSAL INVARIANT LICENSE
-# Copyright (c) 2026 Davide L. Nicoletti
+# ASHI-CORE: OPEN DATA & SOFTWARE LICENSE
+**Copyright (c) 2026 Davide Luca Nicoletti. All Rights Reserved.**
 
-This work is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+This repository contains the formal implementation of the ASHI-CORE diagnostic framework and associated empirical datasets. To ensure maximum utility for the scientific community while preserving academic traceability, the project is released under a dual-licensing model.
 
---------------------------------------------------------------------------------
-SUMMARY OF THE LICENSE:
-You are free to:
-- Share: Copy and redistribute the material in any medium or format.
-- Adapt: Remix, transform, and build upon the material for any purpose, even commercially.
+---
 
-Under the following terms:
-- Attribution: You must give appropriate credit, provide a link to the license, and 
-  indicate if changes were made. You may do so in any reasonable manner, but not 
-  in any way that suggests the licensor endorses you or your use.
+### ⚖️ LICENSING TERMS
 
---------------------------------------------------------------------------------
-SPECIFIC ATTRIBUTION CLAUSE FOR THE ASHI-CORE PROJECT:
+1.  **Empirical Datasets & Documentation**: Licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)**. 
+    * **Permitted use**: You are free to share, copy, and adapt the material for any purpose, including commercial, provided that appropriate credit is given to the original author.
+    * **Full Legal Code**: [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
 
-Any academic, scientific, or commercial use of the data, constants, or 
-methodologies contained in this repository—specifically referring to:
+2.  **Computational Engine (Source Code)**: Licensed under the **GNU Lesser General Public License v3.0 (LGPLv3)**.
+    * This allows for integration into proprietary and academic pipelines while ensuring the core ASHI-CORE algorithms remain open-source.
 
-1. The Universal Singularity Threshold (1.44)
-2. The Biometric Invariance Constant (5.12%)
-3. The Fractal Neuro-Astrophysical Symmetry Model
+---
 
-MUST explicitly cite the author (Davide Luca Nicoletti) and the 
-"ASHI-CORE Invariant" as the original discovery and primary source.
+### 🔬 ACADEMIC ATTRIBUTION & CITATION 
+Users of this framework, particularly those applying the identified **Dimensionless Control Parameters**, are requested to cite the following primary discovery markers:
 
-The 5.12% Law is a registered biometric state constant identified through 
-the ASHI-CORE predictive model. Unauthorized use without attribution is 
-a violation of this license.
---------------------------------------------------------------------------------
+* **Critical Phase Transition Threshold ($\mathcal{K}_c$):** The observed bifurcation point at $\approx 1.441$ within the informational density functional.
+* **Stochastic Residence Constant ($P_c$):** The asymptotic mean of $0.0512$ identified in homeostatic neurodynamic state-space.
 
-To view a copy of this license, visit:
-http://creativecommons.org/licenses/by/4.0/
+**Formal Citation Format:**
+> Nicoletti, D. L. (2026). ASHI-CORE: Manifold Dynamics and Phase Transitions in Dissipative Systems. Zenodo. https://doi.org/[INSERIRE_IL_TUO_DOI_QUI]
+
+---
+
+### 🛠 TECHNICAL CONTACT & COLLABORATION
+This project is part of an independent research effort into **Self-Organized Criticality (SOC)** and **Non-Linear Dynamics**. The author welcomes peer-review, validation requests, and institutional collaboration from departments specializing in Systems Engineering, Astrophysics, and Computational Neuroscience.
