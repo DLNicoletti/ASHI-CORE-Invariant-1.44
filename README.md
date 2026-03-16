@@ -46,3 +46,6 @@ The framework enables **resilient inference** in high-noise, low-SNR, or radiati
 - Refined **information-theoretic parameters H(X)** for radiation-hardened operational modeling  
 
 **Intended Audience:** Aerospace entities and researchers in stochastic dynamics, complex systems, and autonomous computation.
+
+## Authenticity & Intellectual Property. 
+Statement: "This ecosystem is protected by a deterministic digital signature. Current build SHA-256: [6d59bd8d8f4c89ffb4d140f5b89c664798701b4cac8ae373aaaa71540a459116]."
