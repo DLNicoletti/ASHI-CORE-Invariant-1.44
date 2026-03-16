@@ -1,0 +1,9 @@
+[package]
+name = "ashi-core"
+version = "2.0.1"
+edition = "2021"
+authors = ["Davide Luca Nicoletti"]
+description = "High-performance engine for Stochastic Percolation and Phase Transitions"
+
+[dependencies]
+# Per ora lo teniamo puro, senza dipendenze esterne per la massima velocità
