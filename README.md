@@ -1,24 +1,89 @@
-### ASHI-CORE v2.0.1: Stochastic Percolation Engine for Early-Stage Signal Degradation in Aerospace Telemetry
+## ASHI-CORE v2.0.2
 
-### Resource Type
+### Phase Transition Detection in High-Entropy Telemetry Streams
 
-Software (or Dataset, if you are mainly sharing the CSVs)
+ASHI-CORE is a computational framework designed to quantify signal stability and detect phase transition dynamics in high-entropy telemetry data.
 
-### Abstract
+The system is based on a statistical order parameter (K), defined as the ratio between signal dispersion and central tendency, and an empirically observed transition threshold (Kc ≈ 1.441).
 
-ASHI-CORE v2.0.1 is a diagnostic engine designed to detect early-stage signal degradation in high-entropy mission environments. By monitoring the stochastic stability of x-ray and proton flux data (sourced from NASA/GOES-R series telemetry), the system identifies the transition from 'nominal noise' to 'structural divergence' at the critical threshold of , providing critical lead-time for autonomous spacecraft protection.
+---
 
-The framework utilizes Phase Transition Theory and Lyapunov-aligned stability regimes to formalize the boundary where system stability transitions into global information percolation. Unlike traditional threshold-based alarms, ASHI-CORE analyzes the informational topology of the stream, detecting failures through the order parameter  (derived from the  ratio).
+### Core Concept
 
-### Key Features:
+Instead of traditional anomaly detection, ASHI-CORE focuses on identifying structural regime transitions in stochastic signals.
 
-Empirical Validation: Verified against historical NASA datasets, including solar flares, proton flux, and magnetometer divergence.
-Operational Readiness: Classified as TRL3 (Technical Readiness Level 3), signifying a flight-qualified methodology for predictive maintenance.
-Domain-Agnostic Robustness: While optimized for aerospace, the algorithm's invariant stability baseline (verified at 18.00) has been stress-tested against heterogeneous datasets, including high-density neuro-biometric streams (EEG).
-Keywords
+Two regimes are defined:
 
-Aerospace Telemetry, Predictive Failure Detection, Stochastic Percolation, NASA GOES-R, Phase Transition Theory, Space Weather, Autonomous Systems, Signal Integrity.
+* **Stable Regime (K < Kc)**
+  Characterized by bounded variability and localized noise
 
-### Notes 
+* **High-Connectivity Regime (K ≥ Kc)**
+  Characterized by increased variance propagation and global signal coupling
 
-This release (v2.0.1) includes the formal Technical Memorandum ASHI-CORE-2026-001. The internal logic is designed to operate within Jupyter Lab environments using Python 3.x. For technical audit requests regarding granular datasets or raw percolation signal reports, please contact the lead researcher.
+These transitions can be interpreted as changes in the structural organization of the signal.
+
+---
+
+### Mathematical Definition
+
+K = σ / µ
+
+where:
+
+* µ = mean of the signal
+* σ = standard deviation
+
+Empirical transition threshold:
+
+Kc ≈ 1.441
+
+---
+
+### Dataset and Validation
+
+The framework has been evaluated on space telemetry datasets, including:
+
+* Proton flux measurements
+* X-ray flux data
+
+Total samples: N = 2246
+
+Observed results:
+
+* Consistent separation between low-variance and high-variance regimes
+* Robust behavior under stochastic noise conditions
+* Clear transition boundary around Kc in multiple telemetry streams
+
+---
+
+### Scope
+
+ASHI-CORE is currently positioned as a research-stage framework (TRL3), intended for:
+
+* Offline telemetry analysis
+* Simulation environments
+* Early-stage predictive modeling pipelines
+
+---
+
+### Limitations
+
+* The model provides statistical indicators, not deterministic failure predictions
+* Threshold values are empirically derived and may require recalibration
+* No claim of operational deployment is made
+
+---
+
+### Output
+
+The framework produces:
+
+* Temporal K-vector (stability evolution)
+* Phase transition markers
+* Regime classification (stable vs high-connectivity)
+
+---
+
+### Keywords
+
+Telemetry Analysis, Phase Transition, Signal Stability, Percolation Threshold, Space Data, Predictive Modeling, TRL3
