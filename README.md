@@ -1,89 +1,104 @@
-## ASHI-CORE v2.0.2
+# ASHI-CORE™
 
-### Phase Transition Detection in High-Entropy Telemetry Streams
-
-ASHI-CORE is a computational framework designed to quantify signal stability and detect phase transition dynamics in high-entropy telemetry data.
-
-The system is based on a statistical order parameter (K), defined as the ratio between signal dispersion and central tendency, and an empirically observed transition threshold (Kc ≈ 1.441).
+**Phase Transition Detection in High-Entropy Telemetry Streams**
 
 ---
 
-### Core Concept
+## Overview
 
-Instead of traditional anomaly detection, ASHI-CORE focuses on identifying structural regime transitions in stochastic signals.
+ASHI-CORE is a computational framework designed to detect **structural regime transitions** in stochastic telemetry data.
 
-Two regimes are defined:
-
-* **Stable Regime (K < Kc)**
-  Characterized by bounded variability and localized noise
-
-* **High-Connectivity Regime (K ≥ Kc)**
-  Characterized by increased variance propagation and global signal coupling
-
-These transitions can be interpreted as changes in the structural organization of the signal.
+Unlike traditional anomaly detection systems, ASHI-CORE identifies **underlying changes in system dynamics**, enabling early detection of instability in mission-critical environments.
 
 ---
 
-### Mathematical Definition
+## Core Concept
 
-K = σ / µ
+The framework is based on a statistical order parameter:
+
+K = σ / μ
 
 where:
 
-* µ = mean of the signal
-* σ = standard deviation
+* σ = signal dispersion
+* μ = central tendency
 
-Empirical transition threshold:
+A critical threshold is defined as:
 
 Kc ≈ 1.441
 
 ---
 
-### Dataset and Validation
+## Regime Interpretation
 
-The framework has been evaluated on space telemetry datasets, including:
+* K < Kc → Stable regime (localized variability)
+* K ≥ Kc → Transition regime (global coupling and instability)
 
-* Proton flux measurements
-* X-ray flux data
-
-Total samples: N = 2246
-
-Observed results:
-
-* Consistent separation between low-variance and high-variance regimes
-* Robust behavior under stochastic noise conditions
-* Clear transition boundary around Kc in multiple telemetry streams
+This transition represents a shift in the structural organization of the signal.
 
 ---
 
-### Scope
+## Key Capabilities
 
-ASHI-CORE is currently positioned as a research-stage framework (TRL3), intended for:
-
-* Offline telemetry analysis
-* Simulation environments
-* Early-stage predictive modeling pipelines
-
----
-
-### Limitations
-
-* The model provides statistical indicators, not deterministic failure predictions
-* Threshold values are empirically derived and may require recalibration
-* No claim of operational deployment is made
+* Detection of pre-critical transitions before observable anomalies
+* Lightweight computation (edge-compatible)
+* Domain-agnostic (radiation, thermal, power, bio-signals)
+* No model training required
 
 ---
 
-### Output
+## Validation Context
 
-The framework produces:
+The framework has been evaluated on high-entropy telemetry datasets, including:
 
-* Temporal K-vector (stability evolution)
-* Phase transition markers
-* Regime classification (stable vs high-connectivity)
+* Proton flux (radiation stability)
+* X-ray flux (high-energy regime dynamics)
+
+Results indicate consistent separation between stable and transition regimes.
 
 ---
 
-### Keywords
+## Deployment Potential
 
-Telemetry Analysis, Phase Transition, Signal Stability, Percolation Threshold, Space Data, Predictive Modeling, TRL3
+ASHI-CORE is designed for integration in:
+
+* onboard satellite systems
+* digital twin architectures
+* real-time monitoring pipelines
+
+---
+
+## Access & Usage
+
+This repository provides a **high-level disclosure** of the ASHI-CORE framework.
+
+Operational implementation details are not included.
+
+---
+
+## License
+
+This project is released under a **Proprietary Research License**.
+
+* Academic reference: allowed
+* Commercial use: restricted
+* Operational implementation: not permitted
+
+See the LICENSE file for details.
+
+---
+
+## Citation
+
+If you use this work, please cite:
+
+Davide Luca Nicoletti — ASHI-CORE Framework
+DOI: https://doi.org/10.5281/zenodo.19103017
+
+---
+
+## Contact
+
+For collaboration, licensing, or technical evaluation:
+
+Davide Luca Nicoletti
