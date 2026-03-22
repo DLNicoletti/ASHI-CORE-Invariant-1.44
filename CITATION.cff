@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: "ASHI-CORE Framework"
+message: "If you use this work, please cite it as follows."
+type: software
+
+authors:
+
+* family-names: "Nicoletti"
+  given-names: "Davide Luca"
+
+doi: 10.5281/zenodo.19103017
+url: "https://doi.org/10.5281/zenodo.19103017"
+
+repository-code: "https://github.com/DLNicoletti/ASHI-CORE"
+
+abstract: >
+ASHI-CORE is a computational framework for detecting structural regime transitions
+in high-entropy telemetry streams. The system defines a statistical order parameter
+(K = σ/μ) and a critical threshold (Kc ≈ 1.441) to identify transitions from stable
+to globally coupled regimes. Designed for lightweight deployment and applicability
+in mission-critical environments.
+
+keywords:
+
+* aerospace
+* telemetry
+* dynamical systems
+* phase transition
+* anomaly detection
+* signal analysis
+
+license: "Proprietary"
+
+version: "2.0.2"
+
+date-released: 2026-03-22
